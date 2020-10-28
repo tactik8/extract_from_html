@@ -36,10 +36,12 @@ The function accepts a string or list of string and returns a list of structured
 
 Each record contains a reference to the extractor that has been used. 
 For example, the string "Steve can be reached at steve@apple.com" would give:
-{"@type": schema:contactpoint",
-"schema:email": "steve@apple.com",
-"kraken:extractor": "extract_from_text-email_extractor"
-}
+    {
+    "@type": schema:contactpoint",
+    "schema:email": "steve@apple.com",
+    "kraken:extractor": "extract_from_text-email_extractor",
+    "kraken:extracteddate": 2020-10-28T20:43:55+00:00
+    }
 
 
 Extractors:
@@ -54,34 +56,6 @@ City, state, country | geo_extractor | geograpy3
 Job title | title_extractor |
 Quantities | qty_extractor | quantulum3
 
-
-
-
-## Test cases:
-### 1. Null
-input:
-null value
-
-output:
-[] (empty list)
-
-### 2. Non string
-input:
-nons-string value (byte, etc).
-
-output:
-[] (empty list)
-
-### 3. String
-input: 'Steve Jobs works for aple and can be reached at 514 555-3321. he lives in Montreal, Qc. His email is steve@apple.com.'
-string
-
-output:
-{
-"@type": "schema:person",
-"schema:givenname": "Steve",
-"schema:familyname": "Jobs"
-},
 
 
 
