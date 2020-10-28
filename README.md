@@ -36,13 +36,14 @@ The function accepts a string or list of string and returns a list of structured
 
 Each record contains a reference to the extractor that has been used. 
 For example, the string "Steve can be reached at steve@apple.com" would give:
+```
     {
     "@type": schema:contactpoint",
     "schema:email": "steve@apple.com",
     "kraken:extractor": "extract_from_text-email_extractor",
     "kraken:extracteddate": 2020-10-28T20:43:55+00:00
     }
-
+```
 
 Extractors:
 
