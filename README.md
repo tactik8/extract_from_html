@@ -6,12 +6,13 @@ Python functions to extract unstructured information from text.
 - Develop extractors to retrieve each of the following information from a string:
   - Emails
   - URLs
-  - Phone numbers (https://pypi.org/project/ioc-finder/)
-  - Cities, states / provinces, countries (geograpy3)
-  - Job titles (find-job-titles)
-  - Quantities (quantulum3)
+  - Phone numbers
+  - Cities, states / provinces, countries
+  - Job titles
+  - Quantities
 - Normalize the data found
   - Phone number: E.164
+  - Geography: ISO 
 - Output result in a list of json-ld schema.org records
   - email: https://schema.org/ContactPoint 
   - phone: https://schema.org/ContactPoint
@@ -45,7 +46,7 @@ For example, the string "Steve can be reached at steve@apple.com" would give:
     }
 ```
 
-Extractors:
+## Extractors:
 
 Object extracted | Extractor name | Library
 -----------------|----------------|--------
