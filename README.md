@@ -2,6 +2,22 @@
 
 Python functions to extract unstructured information from text.
 
+## Requirements
+- Extract the following information from a string:
+-- Emails
+-- URLs
+-- Phone numbers
+-- Cities, states / provinces, countries (geograpy3)
+-- Job titles (find-job-titles)
+-- Quantities (quantulum3)
+- Normalize the data found
+-- Phone number: E.164
+- Output result in a list of json-ld schema.org records
+-- email: https://schema.org/ContactPoint 
+-- phone: https://schema.org/ContactPoint
+-- url: https://schema.org/WebPage
+
+
 ## input:
 string: the text to extract information from
 or list of strings
