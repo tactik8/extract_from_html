@@ -50,13 +50,13 @@ For example, the string "Steve can be reached at steve@apple.com" would give:
 
 Object extracted | Extractor name | Library
 -----------------|----------------|--------
-Emails | email_extractor | regex
-URLs | url_extractor | ioc-finder
-URLs | url_extractor | regex
-Phone numbers | phone_extractor | ioc-finder
-City, state, country | geo_extractor | geograpy3
+Emails | email_extractor_regex | regex
+URLs | url_extractor_ioc-finder | ioc-finder
+URLs | url_extractor_regex | regex
+Phone numbers | phone_extractor_ioc_finder | ioc-finder
+City, state, country | geo_extractor_geograpy3 | geograpy3
 Job title | title_extractor |
-Quantities | qty_extractor | quantulum3
+Quantities | qty_extractor_quantulum3 | quantulum3
 
 
 
