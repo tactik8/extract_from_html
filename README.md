@@ -4,15 +4,15 @@ Python functions to extract unstructured information from html.
 
 ## Requirements
 - Develop extractors to retrieve each of the following information from a html string:
-  - Emails
-  - URLs
-  - Phone numbers
-  - Cities, states / provinces, countries
-  - Job titles
-  - Quantities
-- Normalize the data found
-  - Phone number: E.164
-  - Geography: ISO 
+  - text
+  - links
+  - rss feeds
+  - domain
+  - google analytics id
+  - sctuctured data / microdata
+  - 
+
+
 - Output result in a list of json-ld schema.org records
   - email: https://schema.org/ContactPoint 
   - phone: https://schema.org/ContactPoint
