@@ -1,9 +1,9 @@
-# extract_from_text
+# extract_from_html
 
-Python functions to extract unstructured information from text.
+Python functions to extract unstructured information from html.
 
 ## Requirements
-- Develop extractors to retrieve each of the following information from a string:
+- Develop extractors to retrieve each of the following information from a html string:
   - Emails
   - URLs
   - Phone numbers
